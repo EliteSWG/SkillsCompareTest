@@ -252,44 +252,29 @@
       combat_marksman_support_02
       combat_marksman_support_03
       combat_marksman_support_04
-      outdoors_scout_camp_01
-      outdoors_scout_camp_02
-      outdoors_scout_camp_03
-      outdoors_scout_camp_04
-      outdoors_scout_harvest_01
-      outdoors_scout_harvest_02
-      outdoors_scout_harvest_03
-      outdoors_scout_harvest_04
-      outdoors_scout_master
       outdoors_scout_movement_01
       outdoors_scout_movement_02
       outdoors_scout_movement_03
       outdoors_scout_movement_04
       outdoors_scout_novice
-      outdoors_scout_tools_01
-      outdoors_scout_tools_02
-      outdoors_scout_tools_03
-      outdoors_scout_tools_04
   mods:
       aim: 30
       alert: 10
       bounty_mission_level: 3
-      burst_run: 50
-      camp: 50
+      burst_run: 40
+      camp: 5
       carbine_accuracy: 110
       carbine_speed: 80
-      creature_harvesting: 50
-      creature_hit_bonus: 10
-      creature_knowledge: 50
+      creature_harvesting: 15
+      creature_knowledge: 5
       droid_find_chance: 120
       droid_find_speed: 80
       droid_track_chance: 90
       droid_track_speed: 70
       droid_tracks: 8
-      foraging: 50
       heavy_rifle_lightning_accuracy: 70
       heavy_rifle_lightning_speed: 60
-      mask_scent: 100
+      mask_scent: 70
       melee_defense: 2
       pistol_accuracy: 110
       pistol_speed: 80
@@ -301,8 +286,8 @@
       rifle_accuracy: 60
       rifle_concealment_chance: 20
       rifle_speed: 30
-      slope_move: 50
-      trapping: 50
+      slope_move: 40
+      trapping: 5
   commands:
       actionShot1
       aim
@@ -343,7 +328,6 @@
       fireLightningCone1
       fireLightningSingle1
       fireLightningSingle2
-      forage
       fullAutoSingle1
       harvestCorpse
       headShot1
@@ -377,24 +361,11 @@
       private_marksman_support_2
       private_marksman_support_3
       private_marksman_support_4
-      private_scout_camp_1
-      private_scout_camp_2
-      private_scout_camp_3
-      private_scout_camp_4
-      private_scout_harvest_1
-      private_scout_harvest_2
-      private_scout_harvest_3
-      private_scout_harvest_4
-      private_scout_master
       private_scout_movement_1
       private_scout_movement_2
       private_scout_movement_3
       private_scout_movement_4
       private_scout_novice
-      private_scout_tools_1
-      private_scout_tools_2
-      private_scout_tools_3
-      private_scout_tools_4
       ranged_damage_mitigation_1
       ranged_damage_mitigation_2
       rollShot
@@ -409,12 +380,6 @@
       warningShot
   schematics:
       craftScoutCampGroupA
-      craftScoutCampGroupB
-      craftScoutCampGroupC
-      craftScoutTrapGroupA
-      craftScoutTrapGroupB
-      craftScoutTrapGroupC
-      craftScoutTrapGroupD
       craftScoutTrapGroupNovice
 
 [combat_brawler_master]
@@ -1636,8 +1601,9 @@
       general_assembly: 100
       general_experimentation: 100
       hiring: 20
-      manage_vendor: 1
+      manage_vendor: 2
       surveying: 100
+      vendor_item_limit: 250
   commands:
       access_fee
       premium_auctions
@@ -1844,10 +1810,11 @@
       general_assembly: 20
       general_experimentation: 20
       hiring: 90
-      manage_vendor: 6
+      manage_vendor: 10
       private_place_merchant_tent: 100
       shop_sign: 4
       surveying: 20
+      vendor_item_limit: 3000
   commands:
       access_fee
       ad_fees_1
@@ -1867,6 +1834,106 @@
       craftArtisanNewbieGroupA
       craftArtisanNewbieGroupB
       craftArtisanSurveyGroupA
+
+[crafting_shipwright_master]
+  skills:
+      crafting_artisan_engineering_01
+      crafting_artisan_engineering_02
+      crafting_artisan_engineering_03
+      crafting_artisan_engineering_04
+      crafting_artisan_novice
+      crafting_shipwright_defense_01
+      crafting_shipwright_defense_02
+      crafting_shipwright_defense_03
+      crafting_shipwright_defense_04
+      crafting_shipwright_engineering_01
+      crafting_shipwright_engineering_02
+      crafting_shipwright_engineering_03
+      crafting_shipwright_engineering_04
+      crafting_shipwright_novice
+      crafting_shipwright_propulsion_01
+      crafting_shipwright_propulsion_02
+      crafting_shipwright_propulsion_03
+      crafting_shipwright_propulsion_04
+      crafting_shipwright_systems_01
+      crafting_shipwright_systems_02
+      crafting_shipwright_systems_03
+      crafting_shipwright_systems_04
+  mods:
+      advanced_assembly: 75
+      advanced_ship_experimentation: 75
+      armor_customization: 100
+      booster_assembly: 75
+      booster_experimentation: 125
+      chassis_assembly: 75
+      chassis_experimentation: 75
+      clothing_customization: 20
+      defense_reverse: 9
+      engine_assembly: 75
+      engine_experimentation: 125
+      engineering_reverse: 9
+      general_assembly: 60
+      general_experimentation: 60
+      power_systems: 75
+      power_systems_experimentation: 75
+      propulsion_reverse: 9
+      shields_assembly: 75
+      shields_experimentation: 75
+      surveying: 20
+      systems_reverse: 9
+      weapon_systems: 75
+      weapon_systems_experimentation: 125
+  commands:
+      private_artisan_engineering_1
+      private_artisan_engineering_2
+      private_artisan_engineering_3
+      private_artisan_engineering_4
+      private_artisan_novice
+      private_shipwright_defense_1
+      private_shipwright_defense_2
+      private_shipwright_defense_3
+      private_shipwright_defense_4
+      private_shipwright_engineering_1
+      private_shipwright_engineering_2
+      private_shipwright_engineering_3
+      private_shipwright_engineering_4
+      private_shipwright_novice
+      private_shipwright_propulsion_1
+      private_shipwright_propulsion_2
+      private_shipwright_propulsion_3
+      private_shipwright_propulsion_4
+      private_shipwright_systems_1
+      private_shipwright_systems_2
+      private_shipwright_systems_3
+      private_shipwright_systems_4
+      sample
+      survey
+  schematics:
+      craftArtisanEngineeringGroupA
+      craftArtisanEngineeringGroupB
+      craftArtisanEngineeringGroupC
+      craftArtisanEngineeringGroupD
+      craftArtisanNewbieGroupA
+      craftArtisanNewbieGroupB
+      craftArtisanSurveyGroupA
+      craftArtisanToolGroupA
+      craftShipwrightDefenseGroupA
+      craftShipwrightDefenseGroupB
+      craftShipwrightDefenseGroupC
+      craftShipwrightDefenseGroupD
+      craftShipwrightEngGroupA
+      craftShipwrightEngGroupB
+      craftShipwrightEngGroupC
+      craftShipwrightEngGroupD
+      craftShipwrightNoviceGroupA
+      craftShipwrightPropulsionGroupA
+      craftShipwrightPropulsionGroupB
+      craftShipwrightPropulsionGroupC
+      craftShipwrightPropulsionGroupD
+      craftShipwrightSystemsGroupA
+      craftShipwrightSystemsGroupB
+      craftShipwrightSystemsGroupC
+      craftShipwrightSystemsGroupD
 
 [crafting_tailor_master]
   skills:
@@ -1997,6 +2064,489 @@
       craftWeaponRangedGroupD
       craftWeaponRangedGroupE
 
+[force_discipline_defender_master]
+  skills:
+      force_discipline_defender_force_defense_01
+      force_discipline_defender_force_defense_02
+      force_discipline_defender_force_defense_03
+      force_discipline_defender_force_defense_04
+      force_discipline_defender_melee_defense_01
+      force_discipline_defender_melee_defense_02
+      force_discipline_defender_melee_defense_03
+      force_discipline_defender_melee_defense_04
+      force_discipline_defender_novice
+      force_discipline_defender_preternatural_defense_01
+      force_discipline_defender_preternatural_defense_02
+      force_discipline_defender_preternatural_defense_03
+      force_discipline_defender_preternatural_defense_04
+      force_discipline_defender_ranged_defense_01
+      force_discipline_defender_ranged_defense_02
+      force_discipline_defender_ranged_defense_03
+      force_discipline_defender_ranged_defense_04
+      force_title_jedi_novice
+      force_title_jedi_rank_01
+      force_title_jedi_rank_02
+  mods:
+      force_defense: 75
+      jedi_force_power_max: 2400
+      jedi_force_power_regen: 22
+      jedi_state_defense: 50
+      jedi_toughness: 37
+      melee_defense: 70
+      private_jedi_difficulty: 1750
+      private_onehandlightsaber_combat_difficulty: 500
+      private_polearmlightsaber_combat_difficulty: 500
+      private_twohandlightsaber_combat_difficulty: 500
+      ranged_defense: 55
+  commands:
+      cert_onehandlightsaber_training
+  schematics:
+      craftJediTool
+      craftSaberNovice
+      craftSaberTraining
+
+[force_discipline_enhancements_master]
+  skills:
+      force_discipline_enhancements_movement_01
+      force_discipline_enhancements_movement_02
+      force_discipline_enhancements_movement_03
+      force_discipline_enhancements_movement_04
+      force_discipline_enhancements_novice
+      force_discipline_enhancements_protection_01
+      force_discipline_enhancements_protection_02
+      force_discipline_enhancements_protection_03
+      force_discipline_enhancements_protection_04
+      force_discipline_enhancements_resistance_01
+      force_discipline_enhancements_resistance_02
+      force_discipline_enhancements_resistance_03
+      force_discipline_enhancements_resistance_04
+      force_discipline_enhancements_synergy_01
+      force_discipline_enhancements_synergy_02
+      force_discipline_enhancements_synergy_03
+      force_discipline_enhancements_synergy_04
+      force_title_jedi_novice
+      force_title_jedi_rank_01
+      force_title_jedi_rank_02
+  mods:
+      jedi_force_power_max: 2400
+      jedi_force_power_regen: 22
+      private_jedi_difficulty: 1750
+      private_onehandlightsaber_combat_difficulty: 500
+      private_polearmlightsaber_combat_difficulty: 500
+      private_twohandlightsaber_combat_difficulty: 500
+  commands:
+      cert_onehandlightsaber_training
+      channelForce
+      drainForce
+      forceAbsorb1
+      forceAbsorb2
+      forceArmor1
+      forceArmor2
+      forceFeedback1
+      forceFeedback2
+      forceMeditate
+      forceResistBleeding
+      forceResistDisease
+      forceResistPoison
+      forceResistStates
+      forceRun1
+      forceRun2
+      forceShield1
+      forceShield2
+      forceSpeed1
+      forceSpeed2
+      transferForce
+  schematics:
+      craftJediTool
+      craftSaberNovice
+      craftSaberTraining
+
+[force_discipline_healing_master]
+  skills:
+      force_discipline_healing_damage_01
+      force_discipline_healing_damage_02
+      force_discipline_healing_damage_03
+      force_discipline_healing_damage_04
+      force_discipline_healing_novice
+      force_discipline_healing_other_01
+      force_discipline_healing_other_02
+      force_discipline_healing_other_03
+      force_discipline_healing_other_04
+      force_discipline_healing_states_01
+      force_discipline_healing_states_02
+      force_discipline_healing_states_03
+      force_discipline_healing_states_04
+      force_discipline_healing_wound_01
+      force_discipline_healing_wound_02
+      force_discipline_healing_wound_03
+      force_discipline_healing_wound_04
+      force_title_jedi_novice
+      force_title_jedi_rank_01
+      force_title_jedi_rank_02
+  mods:
+      jedi_force_power_max: 2400
+      jedi_force_power_regen: 22
+      private_jedi_difficulty: 1650
+      private_onehandlightsaber_combat_difficulty: 500
+      private_polearmlightsaber_combat_difficulty: 500
+      private_twohandlightsaber_combat_difficulty: 500
+  commands:
+      cert_onehandlightsaber_training
+      forceCureDisease
+      forceCurePoison
+      healActionSelf1
+      healActionSelf2
+      healActionWoundOther1
+      healActionWoundOther2
+      healActionWoundSelf1
+      healActionWoundSelf2
+      healAllOther1
+      healAllOther2
+      healAllSelf1
+      healAllSelf2
+      healBattleFatigueSelf1
+      healBattleFatigueSelf2
+      healHealthSelf1
+      healHealthSelf2
+      healHealthWoundOther1
+      healHealthWoundOther2
+      healHealthWoundSelf1
+      healHealthWoundSelf2
+      healMindSelf1
+      healMindSelf2
+      healMindWoundOther1
+      healMindWoundOther2
+      healMindWoundSelf1
+      healMindWoundSelf2
+      healStatesOther
+      healStatesSelf
+      stopBleeding
+  schematics:
+      craftJediTool
+      craftSaberNovice
+      craftSaberTraining
+
+[force_discipline_light_saber_master]
+  skills:
+      force_discipline_light_saber_novice
+      force_discipline_light_saber_one_hand_01
+      force_discipline_light_saber_one_hand_02
+      force_discipline_light_saber_one_hand_03
+      force_discipline_light_saber_one_hand_04
+      force_discipline_light_saber_polearm_01
+      force_discipline_light_saber_polearm_02
+      force_discipline_light_saber_polearm_03
+      force_discipline_light_saber_polearm_04
+      force_discipline_light_saber_technique_01
+      force_discipline_light_saber_technique_02
+      force_discipline_light_saber_technique_03
+      force_discipline_light_saber_technique_04
+      force_discipline_light_saber_two_hand_01
+      force_discipline_light_saber_two_hand_02
+      force_discipline_light_saber_two_hand_03
+      force_discipline_light_saber_two_hand_04
+      force_title_jedi_novice
+      force_title_jedi_rank_01
+      force_title_jedi_rank_02
+  mods:
+      jedi_force_power_max: 2400
+      jedi_force_power_regen: 22
+      jedi_saber_assembly: 70
+      jedi_saber_experimentation: 75
+      lightsaber_toughness: 40
+      onehandlightsaber_accuracy: 75
+      onehandlightsaber_speed: 75
+      polearmlightsaber_accuracy: 75
+      polearmlightsaber_speed: 75
+      private_onehandlightsaber_combat_difficulty: 2000
+      private_polearmlightsaber_combat_difficulty: 2000
+      private_twohandlightsaber_combat_difficulty: 2000
+      saber_block: 60
+      twohandlightsaber_accuracy: 75
+      twohandlightsaber_speed: 75
+  commands:
+      cert_onehandlightsaber_gen1
+      cert_onehandlightsaber_gen2
+      cert_onehandlightsaber_gen3
+      cert_onehandlightsaber_training
+      cert_polearmlightsaber_gen1
+      cert_polearmlightsaber_gen2
+      cert_polearmlightsaber_gen3
+      cert_twohandlightsaber_gen1
+      cert_twohandlightsaber_gen2
+      cert_twohandlightsaber_gen3
+      saber1hComboHit1
+      saber1hComboHit2
+      saber1hComboHit3
+      saber1hFlurry
+      saber1hHeadHit1
+      saber1hHeadHit2
+      saber1hHeadHit3
+      saber1hHit1
+      saber1hHit2
+      saber1hHit3
+      saber2hBodyHit1
+      saber2hBodyHit2
+      saber2hBodyHit3
+      saber2hFrenzy
+      saber2hHit1
+      saber2hHit2
+      saber2hHit3
+      saber2hSweep1
+      saber2hSweep2
+      saber2hSweep3
+      saberPolearmDervish
+      saberPolearmHit1
+      saberPolearmHit2
+      saberPolearmHit3
+      saberPolearmLegHit1
+      saberPolearmLegHit2
+      saberPolearmLegHit3
+      saberPolearmSpinAttack1
+      saberPolearmSpinAttack2
+      saberPolearmSpinAttack3
+      saberSlash1
+      saberSlash2
+      saberThrow1
+      saberThrow2
+  schematics:
+      craftJediTool
+      craftSaberNovice
+      craftSaberOneHand2
+      craftSaberOneHand3
+      craftSaberPoleArm2
+      craftSaberPoleArm3
+      craftSaberTraining
+      craftSaberTwoHand2
+      craftSaberTwoHand3
+
+[force_discipline_powers_master]
+  skills:
+      force_discipline_powers_debuff_01
+      force_discipline_powers_debuff_02
+      force_discipline_powers_debuff_03
+      force_discipline_powers_debuff_04
+      force_discipline_powers_lightning_01
+      force_discipline_powers_lightning_02
+      force_discipline_powers_lightning_03
+      force_discipline_powers_lightning_04
+      force_discipline_powers_mental_01
+      force_discipline_powers_mental_02
+      force_discipline_powers_mental_03
+      force_discipline_powers_mental_04
+      force_discipline_powers_novice
+      force_discipline_powers_push_01
+      force_discipline_powers_push_02
+      force_discipline_powers_push_03
+      force_discipline_powers_push_04
+      force_title_jedi_novice
+      force_title_jedi_rank_01
+      force_title_jedi_rank_02
+  mods:
+      forceintimidate_accuracy: 75
+      forceknockdown_accuracy: 75
+      forcelightning_accuracy: 80
+      forcethrow_accuracy: 80
+      forceweaken_accuracy: 80
+      jedi_force_power_max: 2400
+      jedi_force_power_regen: 22
+      mindblast_accuracy: 80
+      private_force_lightning_cone_power: 3
+      private_force_lightning_single_power: 3
+      private_jedi_difficulty: 1850
+      private_onehandlightsaber_combat_difficulty: 500
+      private_polearmlightsaber_combat_difficulty: 500
+      private_twohandlightsaber_combat_difficulty: 500
+  commands:
+      animalAttack
+      animalCalm
+      animalScare
+      cert_onehandlightsaber_training
+      forceIntimidate1
+      forceIntimidate2
+      forceKnockdown1
+      forceKnockdown2
+      forceLightningCone1
+      forceLightningCone2
+      forceLightningSingle1
+      forceLightningSingle2
+      forceThrow1
+      forceThrow2
+      forceWeaken1
+      forceWeaken2
+      mindBlast1
+      mindBlast2
+  schematics:
+      craftJediTool
+      craftSaberNovice
+      craftSaberTraining
+
+[force_rank_dark_master]
+  skills:
+      force_rank_dark_novice
+      force_rank_dark_rank_01
+      force_rank_dark_rank_02
+      force_rank_dark_rank_03
+      force_rank_dark_rank_04
+      force_rank_dark_rank_05
+      force_rank_dark_rank_06
+      force_rank_dark_rank_07
+      force_rank_dark_rank_08
+      force_rank_dark_rank_09
+      force_rank_dark_rank_10
+  mods:
+      force_control_dark: 60
+      force_manipulation_dark: 65
+      force_power_dark: 100
+
+[force_rank_light_master]
+  skills:
+      force_rank_light_novice
+      force_rank_light_rank_01
+      force_rank_light_rank_02
+      force_rank_light_rank_03
+      force_rank_light_rank_04
+      force_rank_light_rank_05
+      force_rank_light_rank_06
+      force_rank_light_rank_07
+      force_rank_light_rank_08
+      force_rank_light_rank_09
+      force_rank_light_rank_10
+  mods:
+      force_control_light: 100
+      force_manipulation_light: 65
+      force_power_light: 60
+
+[force_sensitive_combat_prowess_master]
+  skills:
+      force_sensitive_combat_prowess_melee_accuracy_01
+      force_sensitive_combat_prowess_melee_accuracy_02
+      force_sensitive_combat_prowess_melee_accuracy_03
+      force_sensitive_combat_prowess_melee_accuracy_04
+      force_sensitive_combat_prowess_melee_speed_01
+      force_sensitive_combat_prowess_melee_speed_02
+      force_sensitive_combat_prowess_melee_speed_03
+      force_sensitive_combat_prowess_melee_speed_04
+      force_sensitive_combat_prowess_novice
+      force_sensitive_combat_prowess_ranged_accuracy_01
+      force_sensitive_combat_prowess_ranged_accuracy_02
+      force_sensitive_combat_prowess_ranged_accuracy_03
+      force_sensitive_combat_prowess_ranged_accuracy_04
+      force_sensitive_combat_prowess_ranged_speed_01
+      force_sensitive_combat_prowess_ranged_speed_02
+      force_sensitive_combat_prowess_ranged_speed_03
+      force_sensitive_combat_prowess_ranged_speed_04
+  mods:
+      melee_accuracy: 12
+      melee_speed: 12
+      ranged_accuracy: 12
+      ranged_speed: 12
+
+[force_sensitive_crafting_mastery_master]
+  skills:
+      force_sensitive_crafting_mastery_assembly_01
+      force_sensitive_crafting_mastery_assembly_02
+      force_sensitive_crafting_mastery_assembly_03
+      force_sensitive_crafting_mastery_assembly_04
+      force_sensitive_crafting_mastery_experimentation_01
+      force_sensitive_crafting_mastery_experimentation_02
+      force_sensitive_crafting_mastery_experimentation_03
+      force_sensitive_crafting_mastery_experimentation_04
+      force_sensitive_crafting_mastery_novice
+      force_sensitive_crafting_mastery_repair_01
+      force_sensitive_crafting_mastery_repair_02
+      force_sensitive_crafting_mastery_repair_03
+      force_sensitive_crafting_mastery_repair_04
+      force_sensitive_crafting_mastery_technique_01
+      force_sensitive_crafting_mastery_technique_02
+      force_sensitive_crafting_mastery_technique_03
+      force_sensitive_crafting_mastery_technique_04
+  mods:
+      force_assembly: 20
+      force_experimentation: 20
+      force_failure_reduction: 4
+      force_repair_bonus: 20
+
+[force_sensitive_enhanced_reflexes_master]
+  skills:
+      force_sensitive_enhanced_reflexes_melee_defense_01
+      force_sensitive_enhanced_reflexes_melee_defense_02
+      force_sensitive_enhanced_reflexes_melee_defense_03
+      force_sensitive_enhanced_reflexes_melee_defense_04
+      force_sensitive_enhanced_reflexes_novice
+      force_sensitive_enhanced_reflexes_ranged_defense_01
+      force_sensitive_enhanced_reflexes_ranged_defense_02
+      force_sensitive_enhanced_reflexes_ranged_defense_03
+      force_sensitive_enhanced_reflexes_ranged_defense_04
+      force_sensitive_enhanced_reflexes_survival_01
+      force_sensitive_enhanced_reflexes_survival_02
+      force_sensitive_enhanced_reflexes_survival_03
+      force_sensitive_enhanced_reflexes_survival_04
+      force_sensitive_enhanced_reflexes_vehicle_control_01
+      force_sensitive_enhanced_reflexes_vehicle_control_02
+      force_sensitive_enhanced_reflexes_vehicle_control_03
+      force_sensitive_enhanced_reflexes_vehicle_control_04
+  mods:
+      camp: 5
+      creature_harvesting: 5
+      creature_knowledge: 5
+      foraging: 5
+      force_vehicle_control: 20
+      force_vehicle_speed: 3
+      mask_scent: 5
+      melee_defense: 20
+      ranged_defense: 20
+      slope_move: 5
+      trapping: 5
+
+[force_sensitive_heightened_senses_master]
+  skills:
+      force_sensitive_heightened_senses_healing_01
+      force_sensitive_heightened_senses_healing_02
+      force_sensitive_heightened_senses_healing_03
+      force_sensitive_heightened_senses_healing_04
+      force_sensitive_heightened_senses_luck_01
+      force_sensitive_heightened_senses_luck_02
+      force_sensitive_heightened_senses_luck_03
+      force_sensitive_heightened_senses_luck_04
+      force_sensitive_heightened_senses_novice
+      force_sensitive_heightened_senses_persuasion_01
+      force_sensitive_heightened_senses_persuasion_02
+      force_sensitive_heightened_senses_persuasion_03
+      force_sensitive_heightened_senses_persuasion_04
+      force_sensitive_heightened_senses_surveying_01
+      force_sensitive_heightened_senses_surveying_02
+      force_sensitive_heightened_senses_surveying_03
+      force_sensitive_heightened_senses_surveying_04
+  mods:
+      force_luck: 4
+      force_persuade: 20
+      healing_dance_wound: 20
+      healing_injury_speed: 10
+      healing_injury_treatment: 10
+      healing_music_wound: 20
+      surveying: 20
+
+[force_title_jedi_master]
+  skills:
+      force_title_jedi_novice
+      force_title_jedi_rank_01
+      force_title_jedi_rank_02
+      force_title_jedi_rank_03
+      force_title_jedi_rank_04
+  mods:
+      jedi_force_power_max: 100
+      jedi_force_power_regen: 1
+      private_onehandlightsaber_combat_difficulty: 500
+      private_polearmlightsaber_combat_difficulty: 500
+      private_twohandlightsaber_combat_difficulty: 500
+  commands:
+      cert_onehandlightsaber_training
+  schematics:
+      craftJediTool
+      craftSaberNovice
+      craftSaberTraining
+
 [jedi_dark_side_journeyman_master]
   skills:
       jedi_dark_side_journeyman_force_manipulation_01
@@ -2041,6 +2591,7 @@
       jedi_force_power_max: 2000
       jedi_force_power_regen: 12
       jedi_saber_assembly: 50
+      jedi_saber_experimentation: 15
       mindblast_accuracy: 90
       onehandlightsaber_accuracy: 130
       onehandlightsaber_speed: 80
@@ -2055,7 +2606,17 @@
   commands:
       
       cert_onehandlightsaber
+      cert_onehandlightsaber_gen1
+      cert_onehandlightsaber_gen2
+      cert_onehandlightsaber_gen3
+      cert_onehandlightsaber_gen4
+      cert_onehandlightsaber_gen5
       cert_twohandlightsaber
+      cert_twohandlightsaber_gen1
+      cert_twohandlightsaber_gen2
+      cert_twohandlightsaber_gen3
+      cert_twohandlightsaber_gen4
+      cert_twohandlightsaber_gen5
       forceCureDisease
       forceCurePoison
       forceKnockdown1
@@ -2107,6 +2668,7 @@
       survey
   schematics:
       craftJediTool
+      craftSaberNovice
       craftSaberOneHand1
       craftSaberOneHand2
       craftSaberOneHand3
@@ -2181,6 +2743,7 @@
       jedi_force_power_max: 4900
       jedi_force_power_regen: 26
       jedi_saber_assembly: 100
+      jedi_saber_experimentation: 40
       mindblast_accuracy: 90
       onehandlightsaber_accuracy: 130
       onehandlightsaber_speed: 80
@@ -2202,8 +2765,23 @@
       animalCalm
       animalScare
       cert_onehandlightsaber
+      cert_onehandlightsaber_gen1
+      cert_onehandlightsaber_gen2
+      cert_onehandlightsaber_gen3
+      cert_onehandlightsaber_gen4
+      cert_onehandlightsaber_gen5
       cert_polearmlightsaber
+      cert_polearmlightsaber_gen1
+      cert_polearmlightsaber_gen2
+      cert_polearmlightsaber_gen3
+      cert_polearmlightsaber_gen4
+      cert_polearmlightsaber_gen5
       cert_twohandlightsaber
+      cert_twohandlightsaber_gen1
+      cert_twohandlightsaber_gen2
+      cert_twohandlightsaber_gen3
+      cert_twohandlightsaber_gen4
+      cert_twohandlightsaber_gen5
       forceCureDisease
       forceCurePoison
       forceIntimidate
@@ -2279,6 +2857,7 @@
       totalHealSelf
   schematics:
       craftJediTool
+      craftSaberNovice
       craftSaberOneHand1
       craftSaberOneHand2
       craftSaberOneHand3
@@ -2339,6 +2918,7 @@
       jedi_force_power_max: 2200
       jedi_force_power_regen: 16
       jedi_saber_assembly: 50
+      jedi_saber_experimentation: 30
       mindblast_accuracy: 90
       onehandlightsaber_accuracy: 130
       onehandlightsaber_speed: 80
@@ -2351,12 +2931,21 @@
       twohandlightsaber_speed: 70
       twohandlightsaber_toughness: 30
   commands:
-      
       animalAttack
       animalCalm
       animalScare
       cert_onehandlightsaber
+      cert_onehandlightsaber_gen1
+      cert_onehandlightsaber_gen2
+      cert_onehandlightsaber_gen3
+      cert_onehandlightsaber_gen4
+      cert_onehandlightsaber_gen5
       cert_twohandlightsaber
+      cert_twohandlightsaber_gen1
+      cert_twohandlightsaber_gen2
+      cert_twohandlightsaber_gen3
+      cert_twohandlightsaber_gen4
+      cert_twohandlightsaber_gen5
       forceCureDisease
       forceCurePoison
       forceKnockdown1
@@ -2409,6 +2998,7 @@
       survey
   schematics:
       craftJediTool
+      craftSaberNovice
       craftSaberOneHand1
       craftSaberOneHand2
       craftSaberOneHand3
@@ -2483,6 +3073,7 @@
       jedi_force_power_max: 4100
       jedi_force_power_regen: 54
       jedi_saber_assembly: 100
+      jedi_saber_experimentation: 50
       mindblast_accuracy: 90
       onehandlightsaber_accuracy: 130
       onehandlightsaber_speed: 80
@@ -2499,13 +3090,27 @@
       twohandlightsaber_speed: 80
       twohandlightsaber_toughness: 60
   commands:
-      
       animalAttack
       animalCalm
       animalScare
       cert_onehandlightsaber
+      cert_onehandlightsaber_gen1
+      cert_onehandlightsaber_gen2
+      cert_onehandlightsaber_gen3
+      cert_onehandlightsaber_gen4
+      cert_onehandlightsaber_gen5
       cert_polearmlightsaber
+      cert_polearmlightsaber_gen1
+      cert_polearmlightsaber_gen2
+      cert_polearmlightsaber_gen3
+      cert_polearmlightsaber_gen4
+      cert_polearmlightsaber_gen5
       cert_twohandlightsaber
+      cert_twohandlightsaber_gen1
+      cert_twohandlightsaber_gen2
+      cert_twohandlightsaber_gen3
+      cert_twohandlightsaber_gen4
+      cert_twohandlightsaber_gen5
       forceCureDisease
       forceCurePoison
       forceIntimidate
@@ -2581,6 +3186,7 @@
       totalHealSelf
   schematics:
       craftJediTool
+      craftSaberNovice
       craftSaberOneHand1
       craftSaberOneHand2
       craftSaberOneHand3
@@ -2622,6 +3228,7 @@
       jedi_force_power_max: 600
       jedi_force_power_regen: 5
       jedi_saber_assembly: 25
+      jedi_saber_experimentation: 5
       mindblast_accuracy: 30
       onehandlightsaber_accuracy: 110
       onehandlightsaber_speed: 70
@@ -2631,6 +3238,11 @@
       surveying: 50
   commands:
       cert_onehandlightsaber
+      cert_onehandlightsaber_gen1
+      cert_onehandlightsaber_gen2
+      cert_onehandlightsaber_gen3
+      cert_onehandlightsaber_gen4
+      cert_onehandlightsaber_gen5
       forceKnockdown1
       forceRun1
       forceThrow1
@@ -2652,6 +3264,7 @@
       survey
   schematics:
       craftJediTool
+      craftSaberNovice
       craftSaberOneHand1
       craftSaberOneHand2
       craftSaberOneHand3
@@ -3089,6 +3702,234 @@
       craftScoutCampGroupC
       craftScoutTrapGroupNovice
 
+[pilot_imperial_navy_master]
+  skills:
+      pilot_imperial_navy_droid_01
+      pilot_imperial_navy_droid_02
+      pilot_imperial_navy_droid_03
+      pilot_imperial_navy_droid_04
+      pilot_imperial_navy_novice
+      pilot_imperial_navy_procedures_01
+      pilot_imperial_navy_procedures_02
+      pilot_imperial_navy_procedures_03
+      pilot_imperial_navy_procedures_04
+      pilot_imperial_navy_starships_01
+      pilot_imperial_navy_starships_02
+      pilot_imperial_navy_starships_03
+      pilot_imperial_navy_starships_04
+      pilot_imperial_navy_weapons_01
+      pilot_imperial_navy_weapons_02
+      pilot_imperial_navy_weapons_03
+      pilot_imperial_navy_weapons_04
+  mods:
+      missile_launching: 100
+      pilot_special_tactics: 80
+  commands:
+      bstrike1
+      bstrike2
+      cert_droid_astromech_1
+      cert_droid_astromech_2
+      cert_droid_astromech_3
+      cert_droid_astromech_4
+      cert_droid_astromech_5
+      cert_ordnance_level1
+      cert_ordnance_level2
+      cert_ordnance_level3
+      cert_ordnance_level4
+      cert_ordnance_level5
+      cert_ordnance_level6
+      cert_ordnance_level7
+      cert_ordnance_level8
+      cert_starships_tieadvanced
+      cert_starships_tieaggressor
+      cert_starships_tiebomber
+      cert_starships_tiefighter
+      cert_starships_tiefighterin
+      cert_starships_tiefighterlight
+      cert_starships_tieinterceptor
+      droidcommand_engineefficiencyfour
+      droidcommand_engineefficiencyone
+      droidcommand_engineefficiencythree
+      droidcommand_engineefficiencytwo
+      droidcommand_enginenormalize
+      droidcommand_engineoverloadfour
+      droidcommand_engineoverloadone
+      droidcommand_engineoverloadthree
+      droidcommand_engineoverloadtwo
+      droidcommand_mutedroid
+      droidcommand_weaponeffeciencyfour
+      droidcommand_weaponeffeciencyone
+      droidcommand_weaponeffeciencythree
+      droidcommand_weaponeffeciencytwo
+      droidcommand_weaponnormalize
+      droidcommand_weaponoverloadfour
+      droidcommand_weaponoverloadone
+      droidcommand_weaponoverloadthree
+      droidcommand_weaponoverloadtwo
+      eweapons
+      nblast
+      private_imperial_navy_droid_1
+      private_imperial_navy_droid_2
+      private_imperial_navy_droid_3
+      private_imperial_navy_droid_4
+      private_imperial_navy_novice
+      private_imperial_navy_starships_1
+      private_imperial_navy_starships_2
+      private_imperial_navy_starships_3
+      private_imperial_navy_starships_4
+      pumpreactor
+
+[pilot_neutral_master]
+  skills:
+      pilot_neutral_droid_01
+      pilot_neutral_droid_02
+      pilot_neutral_droid_03
+      pilot_neutral_droid_04
+      pilot_neutral_novice
+      pilot_neutral_procedures_01
+      pilot_neutral_procedures_02
+      pilot_neutral_procedures_03
+      pilot_neutral_procedures_04
+      pilot_neutral_starships_01
+      pilot_neutral_starships_02
+      pilot_neutral_starships_03
+      pilot_neutral_starships_04
+      pilot_neutral_weapons_01
+      pilot_neutral_weapons_02
+      pilot_neutral_weapons_03
+      pilot_neutral_weapons_04
+  mods:
+      missile_launching: 100
+      pilot_special_tactics: 80
+  commands:
+      cert_droid_astromech_1
+      cert_droid_astromech_2
+      cert_droid_astromech_3
+      cert_droid_astromech_4
+      cert_droid_astromech_5
+      cert_ordnance_level1
+      cert_ordnance_level2
+      cert_ordnance_level3
+      cert_ordnance_level4
+      cert_ordnance_level5
+      cert_ordnance_level6
+      cert_ordnance_level7
+      cert_ordnance_level8
+      cert_starships_heavyblacksunfighter
+      cert_starships_heavyhuttfighter
+      cert_starships_lightblacksunfighter
+      cert_starships_lighthuttfighter
+      cert_starships_mediumblacksunfighter
+      cert_starships_mediumhuttfighter
+      droidcommand_mutedroid
+      droidcommand_reactornormalize
+      droidcommand_reactoroverloadfour
+      droidcommand_reactoroverloadone
+      droidcommand_reactoroverloadthree
+      droidcommand_reactoroverloadtwo
+      droidcommand_weapcapequalize
+      droidcommand_weapcappowerupfour
+      droidcommand_weapcappowerupone
+      droidcommand_weapcappowerupthree
+      droidcommand_weapcappoweruptwo
+      droidcommand_weapcaptoshieldfour
+      droidcommand_weapcaptoshieldone
+      droidcommand_weapcaptoshieldthree
+      droidcommand_weapcaptoshieldtwo
+      epulse1
+      epulse2
+      ethrust
+      iffscramble
+      private_neutral_droid_1
+      private_neutral_droid_2
+      private_neutral_droid_3
+      private_neutral_droid_4
+      private_neutral_novice
+      private_neutral_starships_1
+      private_neutral_starships_2
+      private_neutral_starships_3
+      private_neutral_starships_4
+      ptrap1
+
+[pilot_rebel_navy_master]
+  skills:
+      pilot_rebel_navy_droid_01
+      pilot_rebel_navy_droid_02
+      pilot_rebel_navy_droid_03
+      pilot_rebel_navy_droid_04
+      pilot_rebel_navy_novice
+      pilot_rebel_navy_procedures_01
+      pilot_rebel_navy_procedures_02
+      pilot_rebel_navy_procedures_03
+      pilot_rebel_navy_procedures_04
+      pilot_rebel_navy_starships_01
+      pilot_rebel_navy_starships_02
+      pilot_rebel_navy_starships_03
+      pilot_rebel_navy_starships_04
+      pilot_rebel_navy_weapons_01
+      pilot_rebel_navy_weapons_02
+      pilot_rebel_navy_weapons_03
+      pilot_rebel_navy_weapons_04
+  mods:
+      missile_launching: 100
+      pilot_special_tactics: 80
+  commands:
+      cert_droid_astromech_1
+      cert_droid_astromech_2
+      cert_droid_astromech_3
+      cert_droid_astromech_4
+      cert_droid_astromech_5
+      cert_ordnance_level1
+      cert_ordnance_level2
+      cert_ordnance_level3
+      cert_ordnance_level4
+      cert_ordnance_level5
+      cert_ordnance_level6
+      cert_ordnance_level7
+      cert_ordnance_level8
+      cert_starships_awing
+      cert_starships_xwing
+      cert_starships_ywing
+      cert_starships_ywinglongprobe
+      cert_starships_z95headhunter
+      droidcommand_mutedroid
+      droidcommand_shieldadjustfrontfour
+      droidcommand_shieldadjustfrontone
+      droidcommand_shieldadjustfrontthree
+      droidcommand_shieldadjustfronttwo
+      droidcommand_shieldadjustrearfour
+      droidcommand_shieldadjustrearone
+      droidcommand_shieldadjustrearthree
+      droidcommand_shieldadjustreartwo
+      droidcommand_shieldbacktofronteighty
+      droidcommand_shieldbacktofrontfifty
+      droidcommand_shieldbacktofronthundred
+      droidcommand_shieldbacktofronttwenty
+      droidcommand_shieldemergencyfront
+      droidcommand_shieldemergencyrear
+      droidcommand_shieldfronttobackeighty
+      droidcommand_shieldfronttobackfifty
+      droidcommand_shieldfronttobackhundred
+      droidcommand_shieldfronttobacktwenty
+      droidcommand_shieldnormalize
+      eshields
+      iffscramble
+      inspacereload
+      inspacerepair
+      jstart1
+      jstart2
+      private_rebel_navy_droid_1
+      private_rebel_navy_droid_2
+      private_rebel_navy_droid_3
+      private_rebel_navy_droid_4
+      private_rebel_navy_novice
+      private_rebel_navy_starships_1
+      private_rebel_navy_starships_2
+      private_rebel_navy_starships_3
+      private_rebel_navy_starships_4
+      vrepair
+      vrepairother
+
 [science_combatmedic_master]
   skills:
       combat_marksman_novice
@@ -3485,6 +4326,8 @@
       startDance
       startDance+basic
       startDance+basic2
+      startDance+breakdance
+      startDance+breakdance2
       startDance+exotic
       startDance+exotic2
       startDance+footloose
@@ -3496,6 +4339,8 @@
       startDance+popular2
       startDance+rhythmic
       startDance+rhythmic2
+      startDance+tumble
+      startDance+tumble2
       startMusic
       startMusic+starwars1
       stopDance
@@ -3720,11 +4565,13 @@
       startMusic
       startMusic+ballad
       startMusic+folk
+      startMusic+funk
       startMusic+jazz
       startMusic+rock
       startMusic+starwars1
       startMusic+starwars2
       startMusic+starwars3
+      startMusic+starwars4
       startMusic+waltz
       stopDance
       stopMusic
